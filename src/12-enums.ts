@@ -27,6 +27,5 @@ const enum HttpStatus {
 function handleResponse(status: HttpStatus): void {
     if(status === HttpStatus.OK) {
         console.log("Success!");
-        
     }
 }

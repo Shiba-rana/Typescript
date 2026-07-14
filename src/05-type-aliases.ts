@@ -41,5 +41,5 @@ interface Animal {
 
 let dog: Animal = {
     age: 3,
-    name; "Pit Bull"
+    name: "Pit Bull"
 }
