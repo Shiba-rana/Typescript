@@ -28,3 +28,32 @@ let laptop: Product = {
         return this.price * (percent / 100)
     }
 }
+
+
+//! Partial
+type Chai = {
+    name: string
+    price: number
+    isHot: boolean
+}
+
+const updateChai = (updates: Partial<Chai>) => {
+    console.log("Updating chai with", updates);
+}
+
+updateChai({name: "Masala Chai", price: 30})
+updateChai({})
+updateChai({isHot: true})
+
+
+//! Required
+type ChaiOrder = {
+    name?: string
+    quantity?: number
+}
+
+const placedOrder = (order: Required<ChaiOrder>) => {
+    console.log(order);
+}
+
+placedOrder({name: "Normal Chai", quantity: 3})
