@@ -57,3 +57,19 @@ const placedOrder = (order: Required<ChaiOrder>) => {
 }
 
 placedOrder({name: "Normal Chai", quantity: 3})
+
+
+//! Pick
+type chai = {
+    name: string
+    quantity: number
+    price: number
+    isHot: boolean
+}
+
+type BasicChaiInfo = Pick<chai, "name" | "price"> 
+
+const chaiInfo: BasicChaiInfo = {
+    name: "Masala Chai",
+    price: 30
+}
