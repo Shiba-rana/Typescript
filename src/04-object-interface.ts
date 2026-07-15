@@ -31,45 +31,45 @@ let laptop: Product = {
 
 
 //! Partial
-type Chai = {
-    name: string
-    price: number
-    isHot: boolean
-}
+// type Chai = {
+//     name: string
+//     price: number
+//     isHot: boolean
+// }
 
-const updateChai = (updates: Partial<Chai>) => {
-    console.log("Updating chai with", updates);
-}
+// const updateChai = (updates: Partial<Chai>) => {
+//     console.log("Updating chai with", updates);
+// }
 
-updateChai({name: "Masala Chai", price: 30})
-updateChai({})
-updateChai({isHot: true})
+// updateChai({name: "Masala Chai", price: 30})
+// updateChai({})
+// updateChai({isHot: true})
 
 
 //! Required
-type ChaiOrder = {
-    name?: string
-    quantity?: number
-}
+// type ChaiOrder = {
+//     name?: string
+//     quantity?: number
+// }
 
-const placedOrder = (order: Required<ChaiOrder>) => {
-    console.log(order);
-}
+// const placedOrder = (order: Required<ChaiOrder>) => {
+//     console.log(order);
+// }
 
-placedOrder({name: "Normal Chai", quantity: 3})
+// placedOrder({name: "Normal Chai", quantity: 3})
 
 
 //! Pick
-type chai = {
-    name: string
-    quantity: number
-    price: number
-    isHot: boolean
-}
+// type chai = {
+//     name: string
+//     quantity: number
+//     price: number
+//     isHot: boolean
+// }
 
-type BasicChaiInfo = Pick<chai, "name" | "price"> 
+// type BasicChaiInfo = Pick<chai, "name" | "price"> 
 
-const chaiInfo: BasicChaiInfo = {
-    name: "Masala Chai",
-    price: 30
-}
+// const chaiInfo: BasicChaiInfo = {
+//     name: "Masala Chai",
+//     price: 30
+// }
